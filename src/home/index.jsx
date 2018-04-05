@@ -4,11 +4,52 @@ import { signinRedirect, register } from '../utils/redirect.js'
 const Home = () => {
   return (
     <main className="Home" id="main-content">
-      <section className="usa-hero">
-        <div className="usa-grid">
-          <div className="usa-width-one-whole">
-            <h1>Get started filing your HMDA data</h1>
+      <div className="usa-grid">
+        <div className="usa-width-one-whole">
+          <header>
+            <h1>The HMDA Platform</h1>
             <p className="usa-font-lead">
+              All things HMDA. From tools to help you prepare your file to
+              access to register, login, and being the filing process, and
+              finally HMDA data publication this is the place to be.
+            </p>
+          </header>
+        </div>
+      </div>
+      <div className="card-container">
+        <div className="card">
+          <header>
+            <h4>
+              <a href="/tools/">Tools</a>
+            </h4>
+            <p>
+              Here you can find various tools to assist you in getting your HMDA
+              LAR ready for filing.
+            </p>
+          </header>
+        </div>
+        <div className="card">
+          <header>
+            <h4>
+              <a href="/data-publication/">Data Publication</a>
+            </h4>
+            <p>
+              The HMDA data and reports are the most comprehensive publicly
+              available information on mortgage market activity. The data and
+              reports can be used along with the{' '}
+              <a href="https://www.ffiec.gov/censusproducts.htm">Census</a>{' '}
+              demographic information for data analysis purposes. Available
+              below are the data and reports for HMDA data collected in or after
+              2017.
+            </p>
+          </header>
+        </div>
+        <div className="card">
+          <header>
+            <h4>
+              <a href="/institutions">Get started filing your HMDA data</a>
+            </h4>
+            <p>
               Beginning with HMDA data collected in or after 2017, financial
               institutions will use the HMDA Platform to upload their
               loan/application registers (LARs), review edits, certify the
@@ -24,9 +65,8 @@ const Home = () => {
             >
               Log in
             </button>
-            <span className="usa-text-small">or</span>
             <button
-              className="register-link"
+              className="register-link usa-button-link"
               onClick={e => {
                 e.preventDefault()
                 register('/institutions')
@@ -38,9 +78,10 @@ const Home = () => {
               Every user is required to register online for login credentials
               and establish an account prior to accessing the HMDA Platform.
             </p>
-          </div>
+          </header>
         </div>
-      </section>
+      </div>
+
       <div className="usa-grid">
         <div className="usa-width-one-whole">
           <section className="video-container">

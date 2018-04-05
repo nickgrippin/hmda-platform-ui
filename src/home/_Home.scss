@@ -3,11 +3,6 @@
     background-color: $color-secondary-lightest;
   }
 
-  .usa-grid {
-    margin-top: 2em;
-    margin-bottom: 2em;
-  }
-
   .usa-grid:first-of-type {
     border-bottom: $color-gray-lightest;
   }
@@ -20,9 +15,46 @@
     margin-left: 0.5em;
   }
 
-  h1 {
-    font-size: 2em;
-    margin-bottom: 0;
+  header {
+    margin-bottom: 3em !important;
+
+    h1,
+    h4 {
+      margin-bottom: 0;
+    }
+
+    h4 {
+      margin: 0;
+    }
+
+    .usa-font-lead,
+    p {
+      color: $color-gray;
+      margin-top: 0;
+    }
+  }
+
+  .card-container {
+    align-items: stretch;
+    display: flex;
+    margin: 0 auto;
+    padding: 3rem;
+    max-width: 1040px;
+
+    .card {
+      flex: 1;
+      margin: 0 20px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    header {
+      margin-bottom: 1em;
+    }
   }
 
   h2 {
@@ -45,8 +77,17 @@
     max-width: 77rem;
   }
 
+  .usa-button-link {
+    background-color: $color-white;
+    color: $color-base;
+    font-size: 0.85em;
+    font-weight: normal;
+    padding: 0;
+  }
+
   .video-container {
     height: 0;
+    margin-top: 1em !important;
     padding-bottom: 56.25%;
     position: relative;
     width: 100%;
