@@ -20,33 +20,6 @@ const Home = () => {
         <div className="card">
           <header>
             <h4>
-              <a href="/tools/">Tools</a>
-            </h4>
-            <p>
-              Here you can find various tools to assist you in getting your HMDA
-              LAR ready for filing.
-            </p>
-          </header>
-        </div>
-        <div className="card">
-          <header>
-            <h4>
-              <a href="/data-publication/">Data Publication</a>
-            </h4>
-            <p>
-              The HMDA data and reports are the most comprehensive publicly
-              available information on mortgage market activity. The data and
-              reports can be used along with the{' '}
-              <a href="https://www.ffiec.gov/censusproducts.htm">Census</a>{' '}
-              demographic information for data analysis purposes. Available
-              below are the data and reports for HMDA data collected in or after
-              2017.
-            </p>
-          </header>
-        </div>
-        <div className="card">
-          <header>
-            <h4>
               <a href="/institutions">Get started filing your HMDA data</a>
             </h4>
             <p>
@@ -78,6 +51,63 @@ const Home = () => {
               Every user is required to register online for login credentials
               and establish an account prior to accessing the HMDA Platform.
             </p>
+          </header>
+        </div>
+
+        <div className="card">
+          <header>
+            <h4>
+              <a href="/data-publication/">Data Publication</a>
+            </h4>
+            <p>
+              The HMDA data and reports are the most comprehensive publicly
+              available information on mortgage market activity.
+            </p>
+            <ul>
+              <li>
+                <a href="/data-publication/modified-lar">Modifed LAR</a>
+              </li>
+            </ul>
+            <span
+              className="usa-label"
+              style={{ marginTop: '1.5em', display: 'inline-block' }}
+            >
+              Coming Soon
+            </span>
+            <ul>
+              <li>Disclosure Reports</li>
+              <li>MSA/MD Aggregate Reports</li>
+              <li>National Aggregate Reports</li>
+              <li>Snapshot National Loan-Level Dataset</li>
+            </ul>
+          </header>
+        </div>
+
+        <div className="card">
+          <header>
+            <h4>
+              <a href="/tools/">Tools</a>
+            </h4>
+            <p>
+              Here you can find various tools to assist you in getting your HMDA
+              LAR ready for filing.
+            </p>
+            <ul>
+              <li>
+                <a href="/tools/file-format-verification">
+                  File Format Verification
+                </a>
+              </li>
+              <li>
+                <a href="/tools/lar-formatting">LAR formatting</a>
+              </li>
+              <li>
+                <a href="/tools/rate-spread">Rate Spread</a>
+              </li>
+              <li>
+                <a href="/tools/check-digit">Check Digit</a>
+              </li>
+            </ul>
           </header>
         </div>
       </div>
